@@ -1,0 +1,495 @@
+/*================================== Navbar ==============================*/
+.header-search {
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-area {
+  position: relative;
+}
+#navbar:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#navbar .logo {
+  float: left;
+  color: #000000;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 70px;
+}
+nav ul {
+  float: right;
+  list-style: none;
+  position: relative;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 4px;
+}
+nav ul li a {
+  color: #07142e;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 10px;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid #e9e9e9;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0.3s;
+}
+nav ul ul ul {
+  border-top: none;
+}
+nav ul li:hover > ul {
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  z-index: 100;
+}
+nav ul ul li {
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid #e6e6e64d;
+  background: #0e0e0e;
+}
+nav ul ul li a {
+  line-height: 50px;
+  color: #fff;
+}
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+.show,
+.nav-icon,
+input[type="checkbox"] {
+  display: none;
+}
+.nav-bar2BG {
+  background-color: red;
+}
+.plusicon {
+  font-size: 15px;
+  margin-left: 40px;
+}
+/*================================== Navbar End ==============================*/
+
+/* service Page Area Start  ===========================*/
+.card-social {
+  display: none;
+}
+
+.team-card-content {
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.team-card-content:hover .card-social {
+  display: block;
+}
+.service-card:hover p {
+  color: #fff;
+}
+/* service Page Area End ===========================*/
+
+.teamInformation-container {
+  visibility: hidden;
+  opacity: 0.7;
+}
+.team-cardImage:hover .teamInformation-container {
+  visibility: visible;
+}
+
+.contactUs-bg2 {
+  background-image: url(/Assets/images/contactBG2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.positioning-right {
+  right: -40px;
+}
+.header-banner {
+  background: url(../images/contactBG.jpg);
+  height: 100vh;
+}
+
+/* Home 2 Start ============================================*/
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+.carousel-item {
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+  display: block;
+}
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+#carousel-1:checked
+  ~ .control-1
+  ~ .carousel-indicators
+  li:nth-child(1)
+  .carousel-bullet,
+#carousel-2:checked
+  ~ .control-2
+  ~ .carousel-indicators
+  li:nth-child(2)
+  .carousel-bullet,
+#carousel-3:checked
+  ~ .control-3
+  ~ .carousel-indicators
+  li:nth-child(3)
+  .carousel-bullet,
+#carousel-4:checked
+  ~ .control-4
+  ~ .carousel-indicators
+  li:nth-child(4)
+  .carousel-bullet {
+  color: #2b6cb0; /*Set to match the Tailwind colour you want the active one to be */
+}
+
+/* Home 2 End ============================================*/
+
+/* About Us Page Start   ======================*/
+.Banner {
+  width: 100%;
+  height: 330px;
+  background-image: url(../images/AboutUsBG.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* About Us Page End  =====================*/
+
+/* Footer area is Start ===========================*/
+.footer-area {
+  /* background: url("/Assets/images/service-footer.png") no-repeat center center fixed; */
+  background: linear-gradient(10deg, #000a18fd, #00224fcc),
+    url("/Assets/images/service-footer.png") no-repeat center center fixed;
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+}
+.footer-area2 {
+  background: url(../images/footerBg.png);
+}
+.footer-area3 {
+  background: url(../images/footer3.png);
+}
+.ft-hr {
+  border-top: 0.5px solid #bbbbbb;
+}
+/* Footer area is End ===========================*/
+
+/* Index Page is Start ====================*/
+.box {
+  background-image: url(../images/progress-bg.png);
+}
+.box .percent {
+  width: 75%;
+  height: 75%;
+}
+.box .percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.box .percent svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+.box .percent svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+
+#circle1 {
+  stroke-dashoffset: calc(440 - (440 * 70) / 100);
+  stroke: #03a9f4;
+}
+#circle2 {
+  stroke-dashoffset: calc(440 - (440 * 90) / 100);
+  stroke: #03a9f4;
+}
+#circle3 {
+  stroke-dashoffset: calc(440 - (440 * 95) / 100);
+  stroke: #03a9f4;
+}
+#circle4 {
+  stroke-dashoffset: calc(440 - (440 * 75) / 100);
+  stroke: #03a9f4;
+}
+
+.img-color:hover img {
+  filter: brightness(10);
+}
+
+/* Index Page is End ====================*/
+
+/* home3 start  =======================================*/
+.slide-carousel {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide-carousel::-webkit-scrollbar {
+  height: 15px;
+  border: 1px solid #d5d5d5;
+  background: #d5d5d5;
+}
+
+.slide-carousel::-webkit-scrollbar-thumb {
+  background-color: #3d3d3d;
+}
+
+.slide-carousel .thumbnail:hover {
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+.slide-carousel::-webkit-scrollbar {
+  height: 15px;
+  background: #d5d5d5;
+}
+
+.slide-carousel::-webkit-scrollbar-track {
+  --webkit-box-shadow: inset 0 0 6px #0000004d;
+}
+
+.slide-carousel::-webkit-scrollbar-thumb {
+  background-color: #3d3d3d;
+  outline: 1px solid #eee;
+}
+
+.slide-carousel .thumbnail {
+  flex: 0 0 auto;
+  object-fit: cover;
+  cursor: pointer;
+  margin: 5px;
+  transform: scale(0.95);
+  transition: all 0.3s;
+}
+
+.slide-carousel .thumbnail:hover {
+  transform: scale(1);
+}
+
+.slider-details {
+  display: none;
+}
+
+.thumbnail:hover .slider-details {
+  display: block;
+  transition: all 0.3s;
+}
+
+.rectange-position {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -30px;
+  top: -30px;
+  z-index: -1;
+}
+.circle-position {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bg-pic-info {
+  background-image: url(../images/experiencebottomBackground.png);
+}
+.team-icon {
+  /* background-color: #4f004b96; */
+  background: linear-gradient(to right, #9932ccc5, #ff5833a6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.team-social-icon {
+  opacity: 0;
+}
+.agent-details:hover .team-social-icon {
+  opacity: 1;
+}
+.agent-details:hover .team-icon {
+  opacity: 1;
+}
+.team-icon-description {
+  color: wheat;
+  transition: all 0.3s ease;
+}
+.agent-details:hover .team-icon-description {
+  color: white;
+}
+/* home3 start  =======================================*/
+
+/* Home 4 is Start ====================*/
+.navbar-contact {
+  display: flex !important;
+}
+.navbar-contact-info {
+  display: flex !important;
+}
+.contactUs-bg {
+  background-image: url(../images/contactBG.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.aboutUs-img {
+  position: relative;
+}
+.aboutUs-img::before {
+  content: url(../images/aboutUs.png);
+  position: absolute;
+  left: -90px;
+  z-index: -1;
+  bottom: -50px;
+}
+.about-experience {
+  position: absolute;
+  bottom: 20px;
+  left: -20px;
+  background: var(--theme-color--three);
+}
+.agent-details {
+  transition: all 0.3s ease;
+}
+.agent-card {
+  background-color: #00224f96;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.agent-details:hover .agent-card {
+  opacity: 1;
+}
+.agent-card-description {
+  background: #00224fab;
+  color: white;
+  transition: all 0.3s ease;
+}
+.agent-details:hover .agent-card-description {
+  background: white;
+  color: #00224f;
+}
+.insurance-match {
+  background-image: url(../images/Bakcgorund.png);
+  background-position: center;
+  background-size: cover;
+}
+.contactInsuranceForm {
+  background-color: #ffffff3d;
+}
+/* slider part */
+.wrapper {
+  width: 100%;
+}
+.testimonial-carousel {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+.testimonial-carousel .testimonial-card {
+  margin: 20px 0;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 40px;
+}
+.owl-dot {
+  height: 10px;
+  width: 25px;
+  margin: 0 5px;
+  outline: none;
+  border-radius: 14px;
+  border: 2px solid #9c9e9e !important;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.owl-dot.active,
+.owl-dot:hover {
+  background: #00aba4 !important;
+}
+/* Home 4 is End ====================*/
+
+/* Home 5 is Start ======================*/
+.chooseUs {
+  background-image: url(../images/chooseUsVector.png);
+  background-repeat: no-repeat;
+  background-size: 600px 300px;
+  background-position: bottom;
+}
+
+.emergency {
+  background-image: url(../images/emergency.png);
+  width: 100%;
+  height: 270px;
+}
+/* Home 5 is End ======================*/
+
+/* news singel */
+.category-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  right: 0;
+}
+.category-item-header.active::after {
+  content: "\2212";
+}
